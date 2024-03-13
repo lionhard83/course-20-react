@@ -6,6 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { Card } from './components/Card/Card';
 import { CustomP } from './components/CustomP/CustomP';
 import { Circle } from './components/Circle/Circle';
+import { App2 } from './App2';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import { createContext } from 'react';
+import { LanguageContainer } from './LanguageContainer';
 
 
 
@@ -26,9 +34,11 @@ const users = [
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
 root.render(
   <div>
-    <App></App>
+    <LanguageContainer />
     {/* {users.map(({name, surname, openToWork, role}) => (
     <Card title={`${name} ${surname}`} subtitle={role} option={openToWork}  />))} */}
     {/* <CustomP>

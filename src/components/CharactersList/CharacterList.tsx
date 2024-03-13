@@ -26,10 +26,10 @@ export const CharactersList = () => {
         <span>{page}</span>
         <button disabled={!hasNext} onClick={() => setPage(page + 1)}>Next</button>
 
-        <div style={{backgroundColor: 'red'}}>
+        {/* <div style={{backgroundColor: 'red'}}>
             {currentCharacter && <Character character={currentCharacter}></Character>}
-        </div>
+        </div> */}
         <br/>
-        {characters.map((item) => <Character f={setCurrentCharacter} character={item}></Character>)}
+        {characters.map((item) => <Character currentCharacter={currentCharacter} f={setCurrentCharacter} character={item}></Character>)}
     </div>
 }
